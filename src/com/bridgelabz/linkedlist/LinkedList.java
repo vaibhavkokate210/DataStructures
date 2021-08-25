@@ -10,9 +10,9 @@ public class LinkedList
 		MyLinkedList m=new MyLinkedList();
 		m.add(myFirstNode);
 		m.add(myThirdNode);
-		m.print();
-		System.out.println("Insert 30 between 56 & 70");
 		m.insertBetween(mySecondtNode);
 		m.print();	
+		m.deleteFirst();
+		m.print();
 	}
 }

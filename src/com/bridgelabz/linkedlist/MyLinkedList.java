@@ -33,6 +33,17 @@ public class MyLinkedList<K>
 			myNode.setNext(tail);
 		}
 	}
+	public void deleteFirst()
+	{
+		if(tail==null & head==null)
+			System.out.println("List is empty");
+		else
+		{
+			INode iNode=head;
+			head=head.getNext();
+			iNode=null;
+		}
+	}
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");
