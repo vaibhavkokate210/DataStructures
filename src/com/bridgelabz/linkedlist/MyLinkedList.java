@@ -23,6 +23,16 @@ public class MyLinkedList<K>
 		}
 	}
 	
+	public void insertBetween(INode myNode)
+	{
+		if(tail==null && head==null)
+			System.out.println("List is empty");
+		else
+		{
+			head.setNext(myNode);
+			myNode.setNext(tail);
+		}
+	}
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");
