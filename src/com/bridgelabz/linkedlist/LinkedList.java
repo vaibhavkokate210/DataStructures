@@ -11,8 +11,7 @@ public class LinkedList
 		m.add(myFirstNode);
 		m.add(myThirdNode);
 		m.insertBetween(mySecondtNode);
-		m.print();	
-		m.deleteLast();
 		m.print();
+		m.findNode(40);
 	}
 }

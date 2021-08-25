@@ -59,6 +59,25 @@ public class MyLinkedList<K>
 			iNode.setNext(null);
 		}
 	}
+	public void findNode(K find)
+	{
+		INode tempNode=head;
+		int flag=0;
+		while(tempNode!=null)
+		{
+			if(tempNode.getKey()==find)
+			{
+				System.out.println("Node found with value "+find);
+				flag=1;
+				break;
+			}
+			tempNode=tempNode.getNext();
+		}
+		if(flag==0)
+		{
+			System.out.println("Node with value "+find+" Not found");
+		}
+	}
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");
