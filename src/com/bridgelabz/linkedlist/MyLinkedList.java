@@ -78,6 +78,21 @@ public class MyLinkedList<K>
 			System.out.println("Node with value "+find+" Not found");
 		}
 	}
+	
+	public void insertAfter(K after,INode iNode)
+	{
+		INode tempNode=head;
+		while(tempNode!=null)
+		{
+			if(tempNode.getKey()==after)
+			{
+				iNode.setNext(tempNode.getNext());
+				tempNode.setNext(iNode);
+				break;
+			}
+			tempNode=tempNode.getNext();
+		}
+	}
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");
