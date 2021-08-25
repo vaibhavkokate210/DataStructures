@@ -18,24 +18,11 @@ public class MyLinkedList<K>
 			head=myNode;
 		else
 		{
-			INode tempNode=head;
-			head=myNode;
-			head.setNext(tempNode);
-		}
-	}
-	public void adding(INode myNode)
-	{
-		if(tail==null)
+			tail.setNext(myNode);
 			tail=myNode;
-		if(head==null)
-			head=myNode;
-		else
-		{
-			INode tempNode=head;
-			head=myNode;
-			head.setNext(tempNode);
 		}
 	}
+	
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");
