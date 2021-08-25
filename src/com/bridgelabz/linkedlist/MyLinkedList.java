@@ -10,5 +10,4 @@ public class MyLinkedList<K>
 		this.head = null;
 	}
 	
-	
 }
