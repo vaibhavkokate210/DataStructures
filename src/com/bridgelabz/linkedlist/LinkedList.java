@@ -12,7 +12,7 @@ public class LinkedList
 		m.add(myThirdNode);
 		m.insertBetween(mySecondtNode);
 		m.print();	
-		m.deleteFirst();
+		m.deleteLast();
 		m.print();
 	}
 }
