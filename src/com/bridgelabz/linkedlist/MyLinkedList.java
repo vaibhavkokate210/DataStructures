@@ -93,6 +93,30 @@ public class MyLinkedList<K>
 			tempNode=tempNode.getNext();
 		}
 	}
+	public void deleteMiddle(K delete)
+	{
+		INode tempNode1=head;
+		INode tempNode2=head;
+		while(tempNode1.getKey()!=delete)
+		{
+			tempNode2=tempNode1;
+			tempNode1=tempNode1.getNext();
+		}
+		tempNode2.setNext(tempNode1.getNext());
+		tempNode1.setNext(null);
+		size();
+	}
+	public void size()
+	{
+		INode tempNode=head;
+		int count=0;
+		while(tempNode!=null) 
+		{
+		        tempNode=tempNode.getNext();
+		        count++;
+		}
+		System.out.println("Size of linkedList = "+count);
+	}
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");

@@ -15,5 +15,7 @@ public class LinkedList
 		m.print();
 		m.insertAfter(30,myFourthNode);
 		m.print();
+		m.deleteMiddle(40);
+		m.print();
 	}
 }
