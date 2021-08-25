@@ -106,7 +106,7 @@ public class MyLinkedList<K>
 		tempNode1.setNext(null);
 		size();
 	}
-	public void size()
+	public int size()
 	{
 		INode tempNode=head;
 		int count=0;
@@ -116,7 +116,10 @@ public class MyLinkedList<K>
 		        count++;
 		}
 		System.out.println("Size of linkedList = "+count);
+		return count;
 	}
+
+	
 	public void print()
 	{
 		StringBuilder sb=new StringBuilder("List = ");
